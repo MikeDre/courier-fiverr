@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
 // eslint-disable-next-line
@@ -11,7 +10,6 @@ class Layout extends React.Component {
     const { children } = this.props;
     return (
       <div>
-        <Header />
         {children}
         <Footer />
       </div>

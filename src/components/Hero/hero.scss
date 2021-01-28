@@ -1,0 +1,25 @@
+// Hero Component Styling
+@import '../../sass/settings-tools.scss';
+
+.hero {
+    align-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    height: 75vh;
+    width: 100%;
+}
+
+.hero__header {
+    width: 100%;
+}
+
+.hero__fiverr-wrapper {
+    width: 100%;
+}
+
+.hero__fiverr {
+    background-color: color('white');
+    border-radius: 20px 20px 0 0;
+    display: inline-block;
+    padding: 25px 75px;
+}
