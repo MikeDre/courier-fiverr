@@ -1,0 +1,18 @@
+// SocialIcon Component Styling
+
+.social-icons {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.social-icons--dark {
+  .social-icons__base-color {
+    fill: #1d1d1b;
+  }
+}
+
+.social-icons--light {
+  .social-icons__base-color {
+    fill: #ffffff;
+  }
+}

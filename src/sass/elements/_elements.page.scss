@@ -1,0 +1,54 @@
+/* ==========================================================================
+   #PAGE
+   ========================================================================== */
+
+/**
+ * Simple page-level setup.
+ *
+ * 1. Set the default `background-color` for the entire project. This will also
+ *    affect the color shown when scrolling past the limits of the page on
+ *    browser's that allow it, such as Chrome.
+ * 2. Set the default text `color` for the entire project. This will be the
+ *    color used for all text unless a different one is supplied.
+ * 3. Set the default `font-family` for the entire project. This is useful as
+ *    the content font, if there is a specific one.
+ */
+
+html {
+  background-color: color('primary'); /* [1] */
+  color: color('black-off'); /* [2] */
+  font-family: $font-primary, serif; /* [3] */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: color('black-off');
+  font-family: $font-primary, serif;
+  margin: initial;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+p {
+  font-weight: 400;
+}
+
+a {
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+
+  &:hover {
+    color: color('tertiary');
+    text-decoration: none;
+  }
+}
