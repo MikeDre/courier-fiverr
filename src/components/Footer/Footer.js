@@ -1,16 +1,20 @@
 import React from 'react';
-import SocialIcons from './SocialIcons/SocialIcons';
-import CourierMailchimpLogo from '../images/courier-mailchimp.svg';
+import SocialIcons from '../../components/SocialIcons/SocialIcons';
+import CourierMailchimpLogo from '../../images/courier-mailchimp.svg';
+
+const currentYear = new Date().getFullYear();
 
 const footer = () => (
   <footer className="u-background-color-black uk-padding-large">
     <div className="uk-container u-color-white">
       <div className="uk-grid" data-uk-grid>
         <div className="uk-width-2-3@m">
-          <img src={CourierMailchimpLogo} alt="Courier and Mailchimp Logo" width="270" />
+          <a href="https://couriermedia.co/" target="_blank" rel="noopener noreferrer">
+            <img src={CourierMailchimpLogo} alt="Courier and Mailchimp Logo" width="270" />
+          </a>
           <div className="uk-margin-large-top">
             <small className="footer__text u-color-white">
-              &copy; 2001 - 2021 ALL RIGHTS RESERVED
+              &copy; 2001 - {currentYear} ALL RIGHTS RESERVED
             </small>
           </div>
         </div>

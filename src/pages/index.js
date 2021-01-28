@@ -1,150 +1,56 @@
-import * as React from "react"
+import * as React from 'react';
+import { Helmet } from 'react-helmet';
 
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-const headingAccentStyles = {
-  color: "#663399",
-}
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-const listStyles = {
-  marginBottom: 96,
-  paddingLeft: 0,
-}
-const listItemStyles = {
-  fontWeight: "300",
-  fontSize: "24px",
-  maxWidth: "560px",
-}
+import Layout from '../components/Layouts/Layout';
+import Hero from '../components/Hero/Hero';
 
-const linkStyle = {
-  color: "#8954A8",
-  fontWeight: "bold",
-  fontSize: "16px",
-  verticalAlign: "5%",
-}
+import Callout from '../components/Sections/Callout/Callout';
+import ImageText from '../components/Sections/ImageText/ImageText';
 
-const docLinkStyle = {
-  ...linkStyle,
-  listStyleType: "none",
-  marginBottom: 24,
-}
+import '../sass/main.scss';
 
-const descriptionStyle = {
-  color: "#232129",
-  fontSize: "14px",
-}
-
-const docLink = {
-  text: "Documentation",
-  url: "https://www.gatsbyjs.com/docs/",
-  color: "#8954A8",
-}
-// data
-const links = [
-  {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial/",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-    color: "#E95800",
-  },
-  {
-    text: "How to Guides",
-    url: "https://www.gatsbyjs.com/docs/how-to/",
-    description:
-      "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
-    color: "#1099A8",
-  },
-  {
-    text: "Reference Guides",
-    url: "https://www.gatsbyjs.com/docs/reference/",
-    description:
-      "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
-    color: "#BC027F",
-  },
-  {
-    text: "Conceptual Guides",
-    url: "https://www.gatsbyjs.com/docs/conceptual/",
-    description:
-      "Big-picture explanations of higher-level Gatsby concepts. Most useful for building understanding of a particular topic.",
-    color: "#0D96F2",
-  },
-  {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
-    description:
-      "Add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
-    color: "#000000",
-  },
-]
-
-// markup
-const IndexPage = () => {
+export default function Home() {
   return (
-    <main style={pageStyles}>
-      <title>Home Page</title>
-      <h1 style={headingStyles}>
-        Congratulations
-        <br />
-        <span style={headingAccentStyles}>— you just made a Gatsby site! </span>
-        <span role="img" aria-label="Party popper emojis">
-          🎉🎉🎉
-        </span>
-      </h1>
-      <p style={paragraphStyles}>
-        Edit <code style={codeStyles}>src/pages/index.js</code> to see this page
-        update in real-time.{" "}
-        <span role="img" aria-label="Sunglasses smiley emoji">
-          😎
-        </span>
-      </p>
-      <ul style={listStyles}>
-        <li style={docLinkStyle}>
-          <a
-            style={linkStyle}
-            href={`${docLink.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-          >
-            {docLink.text}
-          </a>
-        </li>
-        {links.map(link => (
-          <li style={{ ...listItemStyles, color: link.color }}>
-            <span>
-              <a
-                style={linkStyle}
-                href={`${link.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-              >
-                {link.text}
-              </a>
-              <p style={descriptionStyle}>{link.description}</p>
-            </span>
-          </li>
-        ))}
-      </ul>
-      <img
-        alt="Gatsby G Logo"
-        src="data:image/svg+xml,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 2a10 10 0 110 20 10 10 0 010-20zm0 2c-3.73 0-6.86 2.55-7.75 6L14 19.75c3.45-.89 6-4.02 6-7.75h-5.25v1.5h3.45a6.37 6.37 0 01-3.89 4.44L6.06 9.69C7 7.31 9.3 5.63 12 5.63c2.13 0 4 1.04 5.18 2.65l1.23-1.06A7.959 7.959 0 0012 4zm-8 8a8 8 0 008 8c.04 0 .09 0-8-8z' fill='%23639'/%3E%3C/svg%3E"
-      />
-    </main>
-  )
-}
+    <>
+      <Helmet>
+        <title>Courier x Fiverr</title>
+        <meta name="description" content="" />
+        <meta name="image" content={``} />
 
-export default IndexPage
+        {/* OpenGraph tags */}
+        <meta property="og:url" content="" />
+        <meta property="og:title" content="Courier x Fiverr" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content={``} />
+
+        {/* Twitter Card tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Courier x Fiverr" />
+        <meta name="twitter:description" content="" />
+        <meta name="twitter:image" content={``} />
+        <script src="https://fast.wistia.net/assets/external/E-v1.js" async />
+      </Helmet>
+      <Layout>
+        <div className="uk-container">
+          <Hero />
+
+          <div className="uk-margin-large-top uk-margin-large-bottom">
+            <Callout
+              header="The new face of freelancing"
+              content="<p>It’s been a challenging few months for small businesses, self-employed entrepreneurs and freelancers. The news has been overwhelmingly bleak, with reports of hospitality, food service and the entertainment industries bearing the <a href='https://www.ons.gov.uk/businessindustryandtrade/business/businessservices/bulletins/coronavirusandtheeconomicimpactsontheuk/19november2020' target='_blank' rel='noopener noreferrer'>largest brunt</a> of closures and trading pauses.</p>"
+            />
+          </div>
+
+          <div className="uk-margin-large-top uk-margin-large-bottom">
+            <ImageText
+              image={``}
+              header="A strong resolve"
+              content="<p>What is often missed, though, are the many ingenious ways in which small traders and the self-employed have stayed afloat in this time. They’ve found silver linings from the circumstances, as Gali Arnon highlights: ‘Despite the challenges, we found that over three quarters of workers surveyed in the UK agreed that working from home has allowed them to take on more freelance work. Four in five freelancers agreed that working from home has made them more productive. Freelancing has suddenly become a very legitimate option for many workers in the UK.’</p><p>Gali is the CMO of Fiverr, a global platform that connects businesses with talented freelancers according to their skills, budgets and project deadlines. The platform has seen record numbers of new freelancers joining and creating new gigs this year. ‘It is clear that people are turning to <a href='https://www.fiverr.com/' target='_blank' rel='noopener noreferrer'></a>Fiverr</a> to explore new income sources as they have more time at home and as global unemployment increases,’ Gali adds.</p><p>And for small business owners needing to suddenly and repeatedly pivot, Fiverr proved a convenient way to attract the right people to get the job done: ‘Small businesses increasingly relied on Fiverr to help them move online, or to improve their online presence if they had one already. There was a 319% increase in searches for “dropshipping”, a 205% rise in businesses searching for front-end development skills, and a further 133% increase in those looking for help with app development.’</p>"
+            />
+          </div>
+
+        </div>
+      </Layout>
+    </>
+  );
+}

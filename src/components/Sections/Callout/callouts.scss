@@ -1,0 +1,15 @@
+// TextBlock Component Styling
+@import '../../../sass/settings-tools.scss';
+
+.callout__content {
+    max-width: 750px;
+}
+
+.callout__text {
+    font-size: 20px;
+}
+
+.callout__header {
+    font-size: 80px;
+    line-height: 1.2;
+}

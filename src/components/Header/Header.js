@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from './Logo/Logo';
+import Logo from '../../components/Logo/Logo';
 
 const header = () => (
   <div className="uk-margin-medium-top uk-margin-large-bottom">
