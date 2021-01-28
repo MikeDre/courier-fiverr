@@ -1,5 +1,9 @@
-// TextBlock Component Styling
+// Callout Component Styling
 @import '../../../sass/settings-tools.scss';
+
+.callout__wrapper {
+    padding: 150px 0;
+}
 
 .callout__content {
     max-width: 750px;

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import Button from '../../../components/Button/Button';
 
-import './callouts.scss';
+import './callout.scss';
 
 function createMarkup(data) {
   return { __html: data };
@@ -24,22 +24,35 @@ class Callout extends React.Component {
   */
   /* eslint react/no-danger: 0 */
   render() {
+
+    const contentBackgroundStyle = {
+      backgroundColor: this.props.backgroundColor,
+    };
+
     return (
-      <div className={`callout uk-flex uk-flex-${this.props.alignContent}`}>
-        <div className="callout__content">
-          <div className={`callout__header u-bold uk-margin-medium-bottom uk-text-${this.props.alignContent}`}>
-            {this.props.header}
-          </div>
-          <div
-            className={`callout__text uk-text-${this.props.alignContent}`}
-            dangerouslySetInnerHTML={createMarkup(this.props.content)}
-          />
-          {this.state.hasButton ? (
-            <Button
-              text={this.props.buttonText}
-              link={this.props.buttonLink}
+      <div className="callout__wrapper" style={contentBackgroundStyle}>
+        <div className={`callout uk-flex uk-flex-${this.props.alignContent}`}>
+          <div className="callout__content">
+            <div
+              className={`
+                callout__header u-bold
+                ${this.props.buttonText || this.props.content ? ' uk-margin-medium-bottom' : ' '}
+                uk-text-${this.props.alignContent}
+              `}
+            >
+              {this.props.header}
+            </div>
+            <div
+              className={`callout__text uk-text-${this.props.alignContent}`}
+              dangerouslySetInnerHTML={createMarkup(this.props.content)}
             />
-          ) : ''}
+            {this.state.hasButton ? (
+              <Button
+                text={this.props.buttonText}
+                link={this.props.buttonLink}
+              />
+            ) : ''}
+          </div>
         </div>
       </div>
     );
@@ -52,6 +65,7 @@ Callout.defaultProps = {
   content: '',
   buttonText: '',
   buttonLink: '',
+  backgroundColor: '#ffffff',
 };
 
 Callout.propTypes = {
@@ -60,6 +74,7 @@ Callout.propTypes = {
   content: PropTypes.string.isRequired,
   buttonText: PropTypes.string,
   buttonLink: PropTypes.string,
+  backgroundColor: PropTypes.string,
 };
 
 export default Callout;

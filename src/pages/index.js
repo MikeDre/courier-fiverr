@@ -9,11 +9,15 @@ import ImageText from '../components/Sections/ImageText/ImageText';
 import Video from '../components/Video/Video';
 import ImageImage from '../components/Sections/ImageImage/ImageImage';
 import HeadingText from '../components/Sections/HeadingText/HeadingText';
+import Image from '../components/Sections/Image/Image';
 
 // Landing page images
 import FiverrLifestyleImage from '../images/fiverr-lifestyle.jpg';
 import FiverrAprilImage from '../images/fiverr-april.jpg';
 import FiverrEraImage from '../images/fiverr-era.jpg';
+import FiverrEra2Image from '../images/fiverr-era-2.jpg';
+import FiverrJimmyImage from '../images/fiverr-jimmy.jpg';
+import FiverrJimmy2Image from '../images/fiverr-jimmy-2.jpg';
 
 import '../sass/main.scss';
 
@@ -41,14 +45,15 @@ export default function Home() {
       <Layout>
         <Hero image={FiverrEraImage} />
 
-        <div className="uk-margin-large-top uk-margin-large-bottom">
+        <section>
           <Callout
+            backgroundColor="#ffffff"
             header="The new face of freelancing"
             content="<p>It’s been a challenging few months for small businesses, self-employed entrepreneurs and freelancers. The news has been overwhelmingly bleak, with reports of hospitality, food service and the entertainment industries bearing the <a href='https://www.ons.gov.uk/businessindustryandtrade/business/businessservices/bulletins/coronavirusandtheeconomicimpactsontheuk/19november2020' target='_blank' rel='noopener noreferrer'>largest brunt</a> of closures and trading pauses.</p>"
           />
-        </div>
+        </section>
 
-        <div className="uk-margin-large-top uk-margin-large-bottom">
+        <section className="uk-margin-large-bottom">
           <ImageText
             image={FiverrLifestyleImage}
             header="A strong resolve"
@@ -56,15 +61,15 @@ export default function Home() {
             headerColor="#884689"
             backgroundColor="#de8c57"
           />
-        </div>
+        </section>
 
-        <div className="uk-container uk-container-large uk-margin-large-top uk-margin-large-bottom">
+        <section className="uk-container uk-container-large uk-margin-large-top uk-margin-large-bottom">
           <Video
             wistiaID="mncpoovoet"
           />
-        </div>
+        </section>
 
-        <div className="uk-margin-large-top uk-margin-large-bottom">
+        <section className="uk-margin-large-top">
           <ImageText
             image={FiverrAprilImage}
             header="Next-gen teamwork"
@@ -72,22 +77,39 @@ export default function Home() {
             headerColor="#1d1d1b"
             backgroundColor="#e5a842"
           />
-        </div>
+        </section>
 
-        <div className="uk-margin-large-top uk-margin-large-bottom">
+        <section className="uk-margin-large-bottom">
           <ImageImage
-            imageLeft={FiverrAprilImage}
-            imageRight={FiverrAprilImage}
+            imageLeft={FiverrJimmyImage}
+            imageRight={FiverrJimmy2Image}
             backgroundColor="#d77472"
           />
-        </div>
-        <div className="uk-container uk-margin-large-top uk-margin-large-bottom">
+        </section>
+
+        <section className="uk-container uk-margin-large-top uk-margin-large-bottom">
           <HeadingText
             headerColor="#de8c57"
             header="Sub-title goes here and here"
             content="<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><p><strong>Lorem ipsum dolor</strong><br>sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
           />
-        </div>
+        </section>
+
+        <section className="uk-container uk-container-large uk-margin-large-top uk-margin-large-bottom">
+          <Image
+            image={FiverrEra2Image}
+            altText="Man holding tray of plants"
+          />
+        </section>
+
+        <section className="uk-margin-large-top uk-margin-large-bottom">
+          <Callout
+            backgroundColor="#d5d0c9"
+            header="Sub-title"
+            content="<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>"
+          />
+        </section>
+
       </Layout>
     </>
   );
