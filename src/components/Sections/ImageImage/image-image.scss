@@ -1,0 +1,16 @@
+// ImageText Component Styling
+@import '../../../sass/settings-tools.scss';
+
+.image-image__image--left {
+    height: 100%;
+    min-height: 300px;
+    width: 100%;
+}
+
+.image-image__content-wrapper {
+    padding: 80px;
+
+    @include mq($until: palm) {
+        padding: 20px;
+    }
+}

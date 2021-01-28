@@ -6,6 +6,9 @@ import Hero from '../components/Hero/Hero';
 
 import Callout from '../components/Sections/Callout/Callout';
 import ImageText from '../components/Sections/ImageText/ImageText';
+import Video from '../components/Video/Video';
+import ImageImage from '../components/Sections/ImageImage/ImageImage';
+import HeadingText from '../components/Sections/HeadingText/HeadingText';
 
 // Landing page images
 import FiverrLifestyleImage from '../images/fiverr-lifestyle.jpg';
@@ -55,6 +58,12 @@ export default function Home() {
           />
         </div>
 
+        <div className="uk-container uk-container-large uk-margin-large-top uk-margin-large-bottom">
+          <Video
+            wistiaID="mncpoovoet"
+          />
+        </div>
+
         <div className="uk-margin-large-top uk-margin-large-bottom">
           <ImageText
             image={FiverrAprilImage}
@@ -62,6 +71,21 @@ export default function Home() {
             content="<p>Seeing this rapid, large-scale digital transformation that so many small businesses were taking on &ndash; and noting that many of them needed help getting online in the first place &ndash; Fiverr launched <a href='https://theshift.fiverr.com'>The Shift</a> in August. A one-stop shop of resources and case studies, The Shift contains all the tools and information that a small business needs to take their first steps into the world of digital trading. From the very first hurdle of <a href='https://www.fiverr.com/pages/get-your-website'>building a website</a>, to guides on <a href='https://www.fiverr.com/resources/guides/digital-marketing?utm_source=brand&amp;utm_medium=brand&amp;utm_campaign=theshift&amp;utm_content=resource'>digital marketing</a> and search engine optimisation (SEO), Fiverr&rsquo;s network of freelance professionals has been helping small businesses move online quickly and efficiently.</p><p>Following on from the success of The Shift, the company launched <a href='https://www.fiverr.com/business'>Fiverr Business</a> in September, a modern digital collaboration environment built for the remote working generation. Fiverr Business is a subscription-based service which allows small businesses to collaborate effectively with their freelance workforce, using a project dashboard that aligns internal teams to external talent. Task updates, approvals and budgets can all be tracked through the platform, making it easier than ever to bring the best minds of the freelance world into a small business team.</p>"
             headerColor="#1d1d1b"
             backgroundColor="#e5a842"
+          />
+        </div>
+
+        <div className="uk-margin-large-top uk-margin-large-bottom">
+          <ImageImage
+            imageLeft={FiverrAprilImage}
+            imageRight={FiverrAprilImage}
+            backgroundColor="#d77472"
+          />
+        </div>
+        <div className="uk-container uk-margin-large-top uk-margin-large-bottom">
+          <HeadingText
+            headerColor="#de8c57"
+            header="Sub-title goes here and here"
+            content="<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><p><strong>Lorem ipsum dolor</strong><br>sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
           />
         </div>
       </Layout>

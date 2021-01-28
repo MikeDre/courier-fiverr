@@ -33,9 +33,7 @@ class Callout extends React.Component {
           <div
             className={`callout__text uk-text-${this.props.alignContent}`}
             dangerouslySetInnerHTML={createMarkup(this.props.content)}
-          >
-            {this.props.text}
-          </div>
+          />
           {this.state.hasButton ? (
             <Button
               text={this.props.buttonText}

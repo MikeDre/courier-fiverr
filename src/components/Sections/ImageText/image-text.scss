@@ -2,15 +2,19 @@
 @import '../../../sass/settings-tools.scss';
 
 .image-text__header {
-    font-size: 50px;
-    line-height: 1.2;
+  font-size: 50px;
+  line-height: 1.2;
+}
+
+.image-text__image {
+  min-height: 300px;
 }
 
 .image-text__content-wrapper {
-    padding: 120px;
+  padding: 120px;
 }
 
 .image-text__content {
-    font-size: 20px;
-    max-width: 500px;
+  font-size: 20px;
+  max-width: 500px;
 }

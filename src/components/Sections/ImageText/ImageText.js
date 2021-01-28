@@ -29,8 +29,8 @@ class ImageText extends React.Component {
     };
 
     return (
-      <div className={`image-text`}>
-        <div className="uk-grid uk-grid-collect" data-uk-grid>
+      <div className="image-text">
+        <div className="uk-grid uk-grid-collapse" data-uk-grid>
           <div className="uk-width-1-2@m image-text__image uk-background-cover" style={imageStyle}>
           </div>
           <div className="uk-width-1-2@m" style={contentBackgroundStyle}>
@@ -41,9 +41,7 @@ class ImageText extends React.Component {
               <div
                 className={`image-text__content uk-text-${this.props.alignContent}`}
                 dangerouslySetInnerHTML={createMarkup(this.props.content)}
-              >
-                {this.props.text}
-              </div>
+              />
             </div>
           </div>
         </div>
