@@ -10,6 +10,7 @@ import Video from '../components/Video/Video';
 import ImageImage from '../components/Sections/ImageImage/ImageImage';
 import HeadingText from '../components/Sections/HeadingText/HeadingText';
 import Image from '../components/Sections/Image/Image';
+import Quote from '../components/Sections/Quote/Quote';
 
 // Landing page images
 import FiverrLifestyleImage from '../images/fiverr-lifestyle.jpg';
@@ -99,6 +100,16 @@ export default function Home() {
           <Image
             image={FiverrEra2Image}
             altText="Man holding tray of plants"
+          />
+        </section>
+
+        <section className="uk-margin-large-top uk-margin-large-bottom">
+          <Quote
+            quote="Pull out quote here across multiple lines to create an even bigger impact"
+            author="Author of Quote, Job Title"
+            quoteColor="#1f2a47"
+            authorColor="#ffffff"
+            backgroundColor="#e5a842"
           />
         </section>
 
