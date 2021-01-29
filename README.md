@@ -1,6 +1,6 @@
 <p align="center">
   <a href="#">
-    <img alt="Courier Partnerships Logo" src="https://i.imgur.com/nv58qYX.png" width="60" />
+    <img alt="Courier Partnerships Logo" src="https://i.imgur.com/nv58qYX.png" width="250" />
   </a>
 </p>
 <h1 align="center">
