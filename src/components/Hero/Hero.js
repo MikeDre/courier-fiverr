@@ -16,7 +16,7 @@ class Hero extends React.Component {
         </div>
         <div className="hero__fiverr-wrapper uk-flex uk-flex-center">
           <div className="hero__fiverr">
-            <img src={PigeonFiverImg} alt="Courier Fiverr Logo" width="200" />
+            <img src={PigeonFiverImg} alt="Courier Fiverr Logo" width="250" />
           </div>
         </div>
       </div>

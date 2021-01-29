@@ -1,12 +1,12 @@
 <p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
+  <a href="https://i.imgur.com/nv58qYX.png">
     <img alt="Courier Partnerships Logo" src="hhttps://i.imgur.com/nv58qYX.png" width="60" />
   </a>
 </p>
 <h1 align="center">
   Courier Partnerships: Fiverr - The new face of freelancing
 </h1>
-Tech stack: <a href="https://www.gatsbyjs.com/" target="_blank" rel="noopener noreferrer">Gatbsy</a>, <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">React</a>, <a href="https://sass-lang.com/" target="_blank" rel="noopener noreferrer">SCSS</a>
+Tech stack: <a href="https://www.gatsbyjs.com/" target="_blank" rel="noopener noreferrer">Gatbsy</a>, <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">React</a>, <a href="https://sass-lang.com/" target="_blank" rel="noopener noreferrer">SCSS</a><br>
 CSS Framework / Flex Gridsystem: <a href="https://getuikit.com/" target="_blank" rel="noopener noreferrer">UiKit</a>
 <hr>
 
@@ -23,13 +23,13 @@ CSS Framework / Flex Gridsystem: <a href="https://getuikit.com/" target="_blank"
 2.  **Start developing.**
 
     ```shell
-    cd freshfund/
+    cd courier-fiverr/
     yarn dev
     ```
 
 3.  **Ready to go!**
 
-    Microsite should now be running at http://localhost:8000!
+    Site should now be running at http://localhost:8000!
 
 4.  **Resources for working with Gatsby**
 
