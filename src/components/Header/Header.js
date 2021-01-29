@@ -14,7 +14,6 @@ const header = () => (
           <Logo />
         </div>
         <div className="uk-flex uk-flex-right uk-flex-top@m uk-flex-middle@s">
-          [ Navigation ]
         </div>
       </div>
     </div>
