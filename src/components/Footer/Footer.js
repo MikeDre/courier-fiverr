@@ -21,9 +21,9 @@ const footer = () => (
         <div className="uk-width-1-3@m uk-flex uk-flex-right">
           <SocialIcons
             darkMode={false}
-            instagram="https://instagram.com/freshfund"
-            twitter="https://twitter.com/freshfund"
-            linkedin="https://linkedin.com/freshfund"
+            instagram="https://instagram.com/couriermedia"
+            twitter="https://twitter.com/couriermedia"
+            linkedin="https://www.linkedin.com/company/couriermedia/"
           />
         </div>
       </div>
