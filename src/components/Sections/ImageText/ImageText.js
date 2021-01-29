@@ -52,7 +52,7 @@ class ImageText extends React.Component {
 ImageText.defaultProps = {
   header: '',
   content: '',
-  backgroundColor: '#de8c57',
+  backgroundColor: '#ff8a3d',
   headerColor: '#884689',
 };
 

@@ -64,7 +64,7 @@ export default function Home() {
             header="A strong resolve"
             content="<p>What is often missed, though, are the many ingenious ways in which small traders and the self-employed have stayed afloat in this time. They’ve found silver linings from the circumstances, as Gali Arnon highlights: ‘Despite the challenges, we found that over three quarters of workers surveyed in the UK agreed that working from home has allowed them to take on more freelance work. Four in five freelancers agreed that working from home has made them more productive. Freelancing has suddenly become a very legitimate option for many workers in the UK.’</p><p>Gali is the CMO of Fiverr, a global platform that connects businesses with talented freelancers according to their skills, budgets and project deadlines. The platform has seen record numbers of new freelancers joining and creating new gigs this year. ‘It is clear that people are turning to <a href='https://www.fiverr.com/' target='_blank' rel='noopener noreferrer'></a>Fiverr</a> to explore new income sources as they have more time at home and as global unemployment increases,’ Gali adds.</p><p>And for small business owners needing to suddenly and repeatedly pivot, Fiverr proved a convenient way to attract the right people to get the job done: ‘Small businesses increasingly relied on Fiverr to help them move online, or to improve their online presence if they had one already. There was a 319% increase in searches for “dropshipping”, a 205% rise in businesses searching for front-end development skills, and a further 133% increase in those looking for help with app development.’</p>"
             headerColor="#884689"
-            backgroundColor="#de8c57"
+            backgroundColor="#ff8a3d"
           />
         </section>
 
@@ -88,7 +88,7 @@ export default function Home() {
 
         <section className="uk-container uk-margin-large-top uk-margin-large-bottom">
           <HeadingText
-            headerColor="#de8c57"
+            headerColor="#ff8a3d"
             header="How businesses fared"
             content="<p>Tools like The Shift and Fiverr Business were critical in bringing businesses online, optimising data and expanding their reach to audiences who are excited about supporting independent brands. Here’s how two businesses brought freelance talent in to guide their transformations.</p> <p><strong>Finding new roots</strong><br>For <a href='https://heyrooted.com/' target='_blank' rel='noopener noreferrer'>Rooted</a>, a houseplant company in New York City, Fiverr’s services helped them pivot their entire business model. Pre-pandemic, Rooted’s primary focus was on business-to-business sales: they provided houseplants and plant maintenance services to offices and commercial spaces around the city. But with the indefinite closure of office spaces came an urgent need for the Rooted team to reassess their priorities.</p> <p>Calling on Fiverr’s directory of freelance illustrators, software developers and experience designers, Rooted shifted to become a consumer-facing business in a matter of days. Freelance creatives helped the Rooted team design a “Find Your Plant” quiz for consumers, blending the brand’s unique tone of voice with external HTML design expertise. To build out its digital brand presence, Rooted also commissioned custom illustrations from freelancers on Fiverr to bring their online shop to life.</p> <p>Read more about how Fiverr supported Rooted <a href='https://theshift.fiverr.com/case_studies/rooted/' target='_blank' rel='noopener noreferrer'>here</a>.</p>"
           />
@@ -96,8 +96,8 @@ export default function Home() {
 
         <section className="uk-margin-large-top uk-margin-large-bottom">
           <Quote
-            quote="Pull out quote here across multiple lines to create an even bigger impact"
-            author="Author of Quote, Job Title"
+            quote="The pandemic has forever changed the way that businesses are built -- companies need systems that are designed to engage with freelancers."
+            author="from Gali Arnon, CMO at Fiverr"
             quoteColor="#1f2a47"
             authorColor="#ffffff"
             backgroundColor="#e5a842"

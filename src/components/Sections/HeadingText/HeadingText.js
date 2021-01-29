@@ -47,8 +47,8 @@ HeadingText.defaultProps = {
   imageAltText: '',
   header: '',
   content: '',
-  backgroundColor: '#de8c57',
-  headerColor: '#de8c57',
+  backgroundColor: '#ff8a3d',
+  headerColor: '#ff8a3d',
 };
 
 HeadingText.propTypes = {
