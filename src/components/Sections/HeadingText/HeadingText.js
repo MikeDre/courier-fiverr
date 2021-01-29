@@ -11,7 +11,7 @@ class HeadingText extends React.Component {
 
   /*
   * @summary: dangerouslySetInnerHTML required here to output HeadingText content
-  * @todo: Currently pulling from static file (winners.json), replace with headless CMS data
+  * @todo: Rename this component to something more suitable
   */
   /* eslint react/no-danger: 0 */
 
