@@ -7,19 +7,21 @@ import './header.scss';
 const header = () => (
   <div className="header">
     <div className="uk-container">
-      <div className="uk-grid uk-grid-small uk-child-width-1-3" data-uk-grid>
-        <div className="uk-flex uk-flex-top@m uk-flex-middle@s">
-          <Button
-            buttonColor="#ffffff"
-            buttonTextColor="#000000"
-            buttonText="Back to main site"
-            buttonLink="https://couriermedia.co/"
-          />
+      <div className="uk-grid uk-grid-small" data-uk-grid>
+        <div className="uk-width-1-3@s uk-width-1-5 uk-flex uk-flex-top@m uk-flex-middle@s">
+          <div className="uk-visible@s">
+            <Button
+              buttonColor="#ffffff"
+              buttonTextColor="#000000"
+              buttonText="Back to main site"
+              buttonLink="https://couriermedia.co/"
+            />
+          </div>
         </div>
-        <div className="uk-text-center">
+        <div className="uk-width-1-3@s uk-width-3-5 uk-text-center">
           <Logo />
         </div>
-        <div className="uk-flex uk-flex-right uk-flex-top@m uk-flex-middle@s">
+        <div className="uk-width-1-3@s uk-width-1-5 uk-flex uk-flex-right uk-flex-top@m uk-flex-middle@s">
         </div>
       </div>
     </div>

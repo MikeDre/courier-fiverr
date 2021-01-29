@@ -3,11 +3,19 @@
 
 .two-column-text__wrapper {
   padding: 100px;
+
+  @include mq($until: palm) {
+    padding: 50px 30px;
+  }
 }
 
 .two-column-text__header {
   font-size: 80px;
   line-height: 1.2;
+
+  @include mq($until: palm) {
+    font-size: 40px;
+  }
 }
 
 .two-column-text {

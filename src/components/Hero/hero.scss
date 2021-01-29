@@ -2,24 +2,33 @@
 @import '../../sass/settings-tools.scss';
 
 .hero {
-    align-content: space-between;
-    display: flex;
-    flex-wrap: wrap;
-    height: 75vh;
-    width: 100%;
+  align-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  height: 75vh;
+  width: 100%;
+
+  @include mq($until: palm) {
+    height: 60vh;
+  }
 }
 
 .hero__header {
-    width: 100%;
+  width: 100%;
 }
 
 .hero__fiverr-wrapper {
-    width: 100%;
+  width: 100%;
 }
 
 .hero__fiverr {
-    background-color: color('white');
-    border-radius: 20px 20px 0 0;
-    display: inline-block;
-    padding: 25px 75px;
+  background-color: color('white');
+  border-radius: 20px 20px 0 0;
+  display: inline-block;
+  padding: 25px 75px;
+
+  @include mq($until: palm) {
+    max-width: 160px;
+    padding: 15px 35px;
+  }
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import './button.scss';
 
@@ -14,7 +13,7 @@ class Button extends React.Component {
 
     return (
       <div>
-        <Link to={this.props.link}>
+        <a href={this.props.link} target="_blank" rel="noopener noreferrer">
           <button
             className={`button`}
             type="button"
@@ -22,7 +21,7 @@ class Button extends React.Component {
           >
             {this.props.buttonText}
           </button>
-        </Link>
+        </a>
       </div>
     );
   }

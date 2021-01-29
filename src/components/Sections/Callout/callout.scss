@@ -2,18 +2,30 @@
 @import '../../../sass/settings-tools.scss';
 
 .callout__wrapper {
-    padding: 150px 0;
+  padding: 150px 0;
+
+  @include mq($until: palm) {
+    padding: 50px 30px;
+  }
 }
 
 .callout__content {
-    max-width: 750px;
+  max-width: 750px;
 }
 
 .callout__text {
-    font-size: 20px;
+  font-size: 20px;
+
+  @include mq($until: palm) {
+    font-size: 18px;
+  }
 }
 
 .callout__header {
-    font-size: 80px;
-    line-height: 1.2;
+  font-size: 80px;
+  line-height: 1.2;
+
+  @include mq($until: palm) {
+    font-size: 50px;
+  }
 }
