@@ -1,39 +1,37 @@
 <p align="center">
   <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+    <img alt="Courier Partnerships Logo" src="hhttps://i.imgur.com/nv58qYX.png" width="60" />
   </a>
 </p>
 <h1 align="center">
-  Gatsby minimal starter
+  Courier Partnerships: Fiverr - The new face of freelancing
 </h1>
+Tech stack: <a href="https://www.gatsbyjs.com/" target="_blank" rel="noopener noreferrer">Gatbsy</a>, <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">React</a>, <a href="https://sass-lang.com/" target="_blank" rel="noopener noreferrer">SCSS</a>
+CSS Framework / Flex Gridsystem: <a href="https://getuikit.com/" target="_blank" rel="noopener noreferrer">UiKit</a>
+<hr>
 
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+1.  **Install Node Modules.**
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+    Using yarn but feel free to replace with `npm` equivalent if you prefer
 
     ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
+    yarn
     ```
 
 2.  **Start developing.**
 
-    Navigate into your new site’s directory and start it up.
-
     ```shell
-    cd my-gatsby-site/
-    npm run develop
+    cd freshfund/
+    yarn dev
     ```
 
-3.  **Open the code and start customizing!**
+3.  **Ready to go!**
 
-    Your site is now running at http://localhost:8000!
+    Microsite should now be running at http://localhost:8000!
 
-    Edit `src/pages/index.js` to see your site update in real-time!
-
-4.  **Learn more**
+4.  **Resources for working with Gatsby**
 
     - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
 
