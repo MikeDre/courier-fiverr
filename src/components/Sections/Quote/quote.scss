@@ -46,7 +46,7 @@
   width: 100%;
   z-index: 100;
 
-  @include mq($until: palm) {
+  @include mq($until: desk) {
     max-width: 200px;
     position: absolute;
     right: 5%;
