@@ -20,9 +20,10 @@ import CourierFiverrOGImage from '../images/courier-fiver-ogimage.jpg';
 import FiverrLifestyleImage from '../images/fiverr-lifestyle.jpg';
 import FiverrAprilImage from '../images/fiverr-april.jpg';
 import FiverrEraImage from '../images/fiverr-era.jpg';
-import FiverrEra2Image from '../images/fiverr-era-2.jpg';
 import FiverrJimmyImage from '../images/fiverr-jimmy.jpg';
 import FiverrJimmy2Image from '../images/fiverr-jimmy-2.jpg';
+import RootedFiverrImage from '../images/rooted-fiverr.jpg';
+import BreadInCaptivityImage from '../images/BreadInCaptivity.jpg';
 
 import '../sass/main.scss';
 
@@ -78,6 +79,14 @@ export default function Home() {
           />
         </section>
 
+        <section className="uk-container uk-margin-large-top uk-margin-large-bottom">
+          <HeadingText
+            headerColor="#ff8a3d"
+            header="How businesses fared"
+            content="<p>Tools like The Shift and Fiverr Business were critical in bringing businesses online, optimising data and expanding their reach to audiences who are excited about supporting independent brands. Here’s how two businesses brought freelance talent in to guide their transformations.</p>"
+          />
+        </section>
+
         <section className="uk-margin-large-bottom">
           <ImageImage
             imageLeft={FiverrJimmyImage}
@@ -89,8 +98,9 @@ export default function Home() {
         <section className="uk-container uk-margin-large-top uk-margin-large-bottom">
           <HeadingText
             headerColor="#ff8a3d"
-            header="How businesses fared"
-            content="<p>Tools like The Shift and Fiverr Business were critical in bringing businesses online, optimising data and expanding their reach to audiences who are excited about supporting independent brands. Here’s how two businesses brought freelance talent in to guide their transformations.</p> <p><strong>Finding new roots</strong><br>For <a href='https://heyrooted.com/' target='_blank' rel='noopener noreferrer'>Rooted</a>, a houseplant company in New York City, Fiverr’s services helped them pivot their entire business model. Pre-pandemic, Rooted’s primary focus was on business-to-business sales: they provided houseplants and plant maintenance services to offices and commercial spaces around the city. But with the indefinite closure of office spaces came an urgent need for the Rooted team to reassess their priorities.</p> <p>Calling on Fiverr’s directory of freelance illustrators, software developers and experience designers, Rooted shifted to become a consumer-facing business in a matter of days. Freelance creatives helped the Rooted team design a “Find Your Plant” quiz for consumers, blending the brand’s unique tone of voice with external HTML design expertise. To build out its digital brand presence, Rooted also commissioned custom illustrations from freelancers on Fiverr to bring their online shop to life.</p> <p>Read more about how Fiverr supported Rooted <a href='https://theshift.fiverr.com/case_studies/rooted/' target='_blank' rel='noopener noreferrer'>here</a>.</p>"
+            header="Finding new roots"
+            content="<p>For <a href='https://heyrooted.com/' target='_blank' rel='noopener noreferrer'>Rooted</a>, a houseplant company in New York City, Fiverr’s services helped them pivot their entire business model. Pre-pandemic, Rooted’s primary focus was on business-to-business sales: they provided houseplants and plant maintenance services to offices and commercial spaces around the city. But with the indefinite closure of office spaces came an urgent need for the Rooted team to reassess their priorities.</p> <p>Calling on Fiverr’s directory of freelance illustrators, software developers and experience designers, Rooted shifted to become a consumer-facing business in a matter of days. Freelance creatives helped the Rooted team design a “Find Your Plant” quiz for consumers, blending the brand’s unique tone of voice with external HTML design expertise. To build out its digital brand presence, Rooted also commissioned custom illustrations from freelancers on Fiverr to bring their online shop to life.</p> <p>Read more about how Fiverr supported Rooted <a href='https://theshift.fiverr.com/case_studies/rooted/' target='_blank' rel='noopener noreferrer'>here</a>.</p>"
+            image={RootedFiverrImage}
           />
         </section>
 
@@ -113,7 +123,7 @@ export default function Home() {
 
         <section className="uk-container uk-container-large uk-margin-large-top uk-margin-large-bottom">
           <Image
-            image={FiverrEra2Image}
+            image={BreadInCaptivityImage}
             altText="Man holding tray of plants"
           />
         </section>

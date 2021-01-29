@@ -12,13 +12,13 @@ const footer = () => (
           <a href="https://couriermedia.co/" target="_blank" rel="noopener noreferrer">
             <img src={CourierMailchimpLogo} alt="Courier and Mailchimp Logo" width="270" />
           </a>
-          <div className="uk-margin-large-top">
+          <div className="uk-margin-large-top uk-text-left">
             <small className="footer__text u-color-white">
               &copy; 2001 - {currentYear} ALL RIGHTS RESERVED
             </small>
           </div>
         </div>
-        <div className="uk-width-1-3@m uk-flex uk-flex-right">
+        <div className="uk-width-1-3@m uk-flex uk-flex-right@m uk-flex-left">
           <SocialIcons
             darkMode={false}
             instagram="https://instagram.com/couriermedia"

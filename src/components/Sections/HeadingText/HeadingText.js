@@ -23,7 +23,7 @@ class HeadingText extends React.Component {
       <div className="heading-text">
         <div className="uk-grid uk-grid-collapse" data-uk-grid>
           <div className="uk-width-1-2@m">
-            <div uk-sticky="offset: 0; bottom: true">
+            <div uk-sticky="offset: 0; bottom: true; media: @s">
               <h3 className={`heading-text__header u-bold ${this.props.image ? 'uk-margin-medium-bottom' : ''}`} style={contentHeaderStyle}>{this.props.header}</h3>
               <img src={this.props.image} alt={this.props.imageAltText} />
             </div>
