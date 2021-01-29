@@ -4,14 +4,17 @@ import { Helmet } from 'react-helmet';
 import Layout from '../components/Layouts/Layout';
 import Hero from '../components/Hero/Hero';
 
+// import Video from '../components/Video/Video';
 import Callout from '../components/Sections/Callout/Callout';
 import ImageText from '../components/Sections/ImageText/ImageText';
-import Video from '../components/Video/Video';
 import ImageImage from '../components/Sections/ImageImage/ImageImage';
 import HeadingText from '../components/Sections/HeadingText/HeadingText';
 import Image from '../components/Sections/Image/Image';
 import Quote from '../components/Sections/Quote/Quote';
 import TwoColumnText from '../components/Sections/TwoColumnText/TwoColumnText';
+
+// General images
+import CourierFiverrOGImage from '../images/courier-fiver-ogimage.jpg';
 
 // Landing page images
 import FiverrLifestyleImage from '../images/fiverr-lifestyle.jpg';
@@ -27,21 +30,21 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>Courier x Fiverr</title>
-        <meta name="description" content="" />
-        <meta name="image" content={``} />
+        <title>The new face of freelancing</title>
+        <meta name="description" content="It’s been a challenging few months for small businesses, self-employed entrepreneurs and freelancers. The news has been overwhelmingly bleak, with reports of hospitality, food service and the entertainment industries bearing the largest brunt of closures and trading pauses." />
+        <meta name="image" content={CourierFiverrOGImage} />
 
         {/* OpenGraph tags */}
-        <meta property="og:url" content="" />
-        <meta property="og:title" content="Courier x Fiverr" />
-        <meta property="og:description" content="" />
-        <meta property="og:image" content={``} />
+        <meta property="og:url" content="https://couriermedia.com/partnerships/fiverr" />
+        <meta property="og:title" content="The new face of freelancing" />
+        <meta property="og:description" content="It’s been a challenging few months for small businesses, self-employed entrepreneurs and freelancers. The news has been overwhelmingly bleak, with reports of hospitality, food service and the entertainment industries bearing the largest brunt of closures and trading pauses." />
+        <meta property="og:image" content={CourierFiverrOGImage} />
 
         {/* Twitter Card tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Courier x Fiverr" />
-        <meta name="twitter:description" content="" />
-        <meta name="twitter:image" content={``} />
+        <meta name="twitter:title" content="The new face of freelancing" />
+        <meta name="twitter:description" content="It’s been a challenging few months for small businesses, self-employed entrepreneurs and freelancers. The news has been overwhelmingly bleak, with reports of hospitality, food service and the entertainment industries bearing the largest brunt of closures and trading pauses." />
+        <meta name="twitter:image" content={CourierFiverrOGImage} />
         <script src="https://fast.wistia.net/assets/external/E-v1.js" async />
       </Helmet>
       <Layout>
