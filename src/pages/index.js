@@ -21,7 +21,7 @@ import FiverrLifestyleImage from '../images/fiverr-lifestyle.jpg';
 import FiverrAprilImage from '../images/fiverr-april.jpg';
 import FiverrEraImage from '../images/fiverr-era.jpg';
 import FiverrJimmyImage from '../images/fiverr-jimmy.jpg';
-import FiverrJimmy2Image from '../images/fiverr-jimmy-2.jpg';
+import FiverrRikitaImage from '../images/rikita-fiverr.jpg';
 import RootedFiverrImage from '../images/rooted-fiverr.jpg';
 import BreadInCaptivityImage from '../images/BreadInCaptivity.jpg';
 
@@ -90,7 +90,7 @@ export default function Home() {
         <section className="uk-margin-large-bottom">
           <ImageImage
             imageLeft={FiverrJimmyImage}
-            imageRight={FiverrJimmy2Image}
+            imageRight={FiverrRikitaImage}
             backgroundColor="#d77472"
           />
         </section>
