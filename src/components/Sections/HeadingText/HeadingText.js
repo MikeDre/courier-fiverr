@@ -23,7 +23,10 @@ class HeadingText extends React.Component {
       <div className="heading-text">
         <div className="uk-grid uk-grid-collapse" data-uk-grid>
           <div className="uk-width-1-2@m">
-            <h3 uk-sticky="offset: 0; bottom: true" className="heading-text__header u-bold uk-margin-medium-bottom" style={contentHeaderStyle}>{this.props.header}</h3>
+            <div uk-sticky="offset: 0; bottom: true">
+              <h3 className="heading-text__header u-bold uk-margin-medium-bottom" style={contentHeaderStyle}>{this.props.header}</h3>
+              <img src={this.props.image} alt={this.props.imageAltText} />
+            </div>
           </div>
           <div className="uk-width-1-2@m">
             <div className="heading-text__content-wrapper">
@@ -40,6 +43,8 @@ class HeadingText extends React.Component {
 }
 
 HeadingText.defaultProps = {
+  image: '',
+  imageAltText: '',
   header: '',
   content: '',
   backgroundColor: '#de8c57',
@@ -47,7 +52,8 @@ HeadingText.defaultProps = {
 };
 
 HeadingText.propTypes = {
-  image: PropTypes.string.isRequired,
+  image: PropTypes.string,
+  imageAltText: PropTypes.string,
   header: PropTypes.string,
   content: PropTypes.string,
   headerColor: PropTypes.string,

@@ -1,6 +1,10 @@
 // TwoColumnText Component Styling
 @import '../../../sass/settings-tools.scss';
 
+.two-column-text__wrapper {
+  padding: 100px;
+}
+
 .two-column-text__header {
   font-size: 80px;
   line-height: 1.2;
