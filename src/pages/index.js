@@ -11,6 +11,7 @@ import ImageImage from '../components/Sections/ImageImage/ImageImage';
 import HeadingText from '../components/Sections/HeadingText/HeadingText';
 import Image from '../components/Sections/Image/Image';
 import Quote from '../components/Sections/Quote/Quote';
+import TwoColumnText from '../components/Sections/TwoColumnText/TwoColumnText';
 
 // Landing page images
 import FiverrLifestyleImage from '../images/fiverr-lifestyle.jpg';
@@ -96,13 +97,6 @@ export default function Home() {
           />
         </section>
 
-        <section className="uk-container uk-container-large uk-margin-large-top uk-margin-large-bottom">
-          <Image
-            image={FiverrEra2Image}
-            altText="Man holding tray of plants"
-          />
-        </section>
-
         <section className="uk-margin-large-top uk-margin-large-bottom">
           <Quote
             quote="Pull out quote here across multiple lines to create an even bigger impact"
@@ -110,6 +104,20 @@ export default function Home() {
             quoteColor="#1f2a47"
             authorColor="#ffffff"
             backgroundColor="#e5a842"
+          />
+        </section>
+
+        <section className="uk-container uk-container-large uk-margin-large-top uk-margin-large-bottom">
+          <TwoColumnText
+            header="Sub-title"
+            content="<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>"
+          />
+        </section>
+
+        <section className="uk-container uk-container-large uk-margin-large-top uk-margin-large-bottom">
+          <Image
+            image={FiverrEra2Image}
+            altText="Man holding tray of plants"
           />
         </section>
 

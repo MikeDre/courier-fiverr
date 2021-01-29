@@ -1,0 +1,22 @@
+// TwoColumnText Component Styling
+@import '../../../sass/settings-tools.scss';
+
+.two-column-text__header {
+  font-size: 80px;
+  line-height: 1.2;
+}
+
+.two-column-text {
+  column-count: 2;
+  column-gap: 100px;
+  font-size: 20px;
+
+  @include mq($until: device) {
+    column-count: 1;
+    column-gap: 50px;
+  }
+
+  @include mq($until: palm) {
+    column-count: 1;
+  }
+}

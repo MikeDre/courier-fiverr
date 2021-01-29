@@ -30,9 +30,7 @@ class HeadingText extends React.Component {
               <div
                 className="heading-text__content"
                 dangerouslySetInnerHTML={createMarkup(this.props.content)}
-              >
-                {this.props.text}
-              </div>
+              />
             </div>
           </div>
         </div>
