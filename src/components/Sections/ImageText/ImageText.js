@@ -30,9 +30,9 @@ class ImageText extends React.Component {
     return (
       <div className="image-text">
         <div className="uk-grid uk-grid-collapse" data-uk-grid>
-          <div className="uk-width-1-2@m image-text__image uk-background-cover" style={imageStyle}>
+          <div className="uk-width-1-2@l image-text__image uk-background-cover" style={imageStyle}>
           </div>
-          <div className="uk-width-1-2@m" style={contentBackgroundStyle}>
+          <div className="uk-width-1-2@l" style={contentBackgroundStyle}>
             <div className="image-text__content-wrapper">
               <div>
                 <h3 className="image-text__header u-bold" style={contentHeaderStyle}>{this.props.header}</h3>

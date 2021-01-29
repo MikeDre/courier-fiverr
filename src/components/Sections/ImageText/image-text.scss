@@ -13,7 +13,11 @@
 }
 
 .image-text__image {
-  min-height: 300px;
+  min-height: 600px;
+
+  @include mq($until: palm) {
+    min-height: 400px;
+  }
 }
 
 .image-text__content-wrapper {
