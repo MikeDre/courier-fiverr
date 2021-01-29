@@ -26,7 +26,7 @@ class Quote extends React.Component {
           <div className="uk-width-2-3@m">
 
             <blockquote
-              className={`quote u-font-secondary ${this.props.author ? 'uk-margin-medium-bottom' : ''}`}
+              className={`quote ${this.props.author ? 'uk-margin-medium-bottom' : ''}`}
               style={quoteColorStyle}
             >
               {this.props.quote}

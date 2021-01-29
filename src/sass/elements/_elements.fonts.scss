@@ -4,13 +4,13 @@
 
 // Place all @font-face declarations in here
 
+// Platform
 @font-face {
   font-display: swap;
   font-family: 'Platform';
   font-style: normal;
   font-weight: 500;
-  src: url('../fonts/Platform-Medium.woff2') format('woff2'),
-    url('../fonts/Platform-Medium.woff') format('woff');
+  src: url('../fonts/Platform-Medium.woff2') format('woff2'), url('../fonts/Platform-Medium.woff') format('woff');
 }
 
 @font-face {
@@ -18,8 +18,7 @@
   font-family: 'Platform';
   font-style: normal;
   font-weight: bold;
-  src: url('../fonts/Platform-Bold.woff2') format('woff2'),
-    url('../fonts/Platform-Bold.woff') format('woff');
+  src: url('../fonts/Platform-Bold.woff2') format('woff2'), url('../fonts/Platform-Bold.woff') format('woff');
 }
 
 @font-face {
@@ -27,6 +26,23 @@
   font-family: 'Platform';
   font-style: normal;
   font-weight: normal;
-  src: url('../fonts/Platform-Regular.woff2') format('woff2'),
-    url('../fonts/Platform-Regular.woff') format('woff');
+  src: url('../fonts/Platform-Regular.woff2') format('woff2'), url('../fonts/Platform-Regular.woff') format('woff');
+}
+
+// Atlas Grotesk
+@font-face {
+  font-display: swap;
+  font-family: 'Atlas Grotesk';
+  font-style: normal;
+  font-weight: bold;
+  src: url('../fonts/AtlasGrotesk-Bold.woff2') format('woff2'), url('../fonts/AtlasGrotesk-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Atlas Grotesk';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/AtlasGrotesk-Regular.woff2') format('woff2'),
+    url('../fonts/AtlasGrotesk-Regular.woff') format('woff');
 }

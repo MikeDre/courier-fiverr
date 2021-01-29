@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 
-import Button from '../../../components/Button/Button';
+import Button from '../../../components/Buttons/Button';
 
 import './callout.scss';
 
@@ -34,7 +34,7 @@ class Callout extends React.Component {
           <div className="callout__content">
             <div
               className={`
-                callout__header u-bold
+                callout__header u-bold u-font-primary
                 ${this.props.buttonText || this.props.content ? ' uk-margin-medium-bottom' : ' '}
                 uk-text-${this.props.alignContent}
               `}

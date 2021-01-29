@@ -65,12 +65,6 @@ export default function Home() {
           />
         </section>
 
-        <section className="uk-container uk-container-large uk-margin-large-top uk-margin-large-bottom">
-          <Video
-            wistiaID="mncpoovoet"
-          />
-        </section>
-
         <section className="uk-margin-large-top">
           <ImageText
             image={FiverrAprilImage}

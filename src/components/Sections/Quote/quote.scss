@@ -1,15 +1,25 @@
 // Callout Component Styling
 @import '../../../sass/settings-tools.scss';
 
+@font-face {
+  font-display: swap;
+  font-family: 'Berlingske Serif';
+  font-style: normal;
+  font-weight: bold;
+  src: url('/fonts/BerlingskeSerif-Bold.woff2') format('woff2'), url('/fonts/BerlingskeSerif-Bold.woff') format('woff');
+}
+
 .quote__wrapper {
   padding: 200px 100px;
   position: relative;
 }
 
 .quote {
+  font-family: 'Berlingske Serif';
   font-size: 60px;
   font-style: normal;
-  line-height: 1.2;
+  font-weight: bold;
+  line-height: 1.1;
 }
 
 .quote__author {

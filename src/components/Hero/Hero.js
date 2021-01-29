@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Header from '../../components/Header/Header';
-
+import PigeonFiverImg from '../../images/pigeon-fiverr.svg';
 import './hero.scss';
 class Hero extends React.Component {
   render() {
@@ -16,7 +16,7 @@ class Hero extends React.Component {
         </div>
         <div className="hero__fiverr-wrapper uk-flex uk-flex-center">
           <div className="hero__fiverr">
-            [ Courier x Fiverr Logo]
+            <img src={PigeonFiverImg} alt="Courier Fiverr Logo" width="200" />
           </div>
         </div>
       </div>
