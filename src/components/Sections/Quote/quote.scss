@@ -12,6 +12,10 @@
 .quote__wrapper {
   padding: 200px 100px;
   position: relative;
+
+  @include mq($until: palm) {
+    padding: 200px 50px;
+  }
 }
 
 .quote {
@@ -20,10 +24,18 @@
   font-style: normal;
   font-weight: bold;
   line-height: 1.1;
+
+  @include mq($until: palm) {
+    font-size: 40px;
+  }
 }
 
 .quote__author {
   font-size: 20px;
+
+  @include mq($until: palm) {
+    font-size: 18px;
+  }
 }
 
 .quote__quote-shape {
@@ -33,10 +45,19 @@
   top: -50px;
   width: 100%;
   z-index: 100;
+
+  @include mq($until: palm) {
+    max-width: 200px;
+    position: absolute;
+    right: 5%;
+    top: -30px;
+    width: 100%;
+    z-index: 100;
+  }
 }
 
 .quote__rounded-rectangle-shape {
-  background-color: $red;
+  background-color: color('red');
   border-radius: 30px 0 0;
   bottom: 0;
   height: 100%;
@@ -45,4 +66,16 @@
   position: absolute;
   right: 0;
   width: 100%;
+
+  @include mq($until: palm) {
+    background-color: color('red');
+    border-radius: 30px 0 0;
+    bottom: 0;
+    height: 100%;
+    max-height: 150px;
+    max-width: 250px;
+    position: absolute;
+    right: 0;
+    width: 100%;
+  }
 }

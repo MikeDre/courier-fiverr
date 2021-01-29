@@ -34,11 +34,11 @@ class ImageText extends React.Component {
           </div>
           <div className="uk-width-1-2@m" style={contentBackgroundStyle}>
             <div className="image-text__content-wrapper">
-              <div className={`uk-text-${this.props.alignContent}`}>
-                <h3 className="image-text__header u-bold uk-margin-medium-bottom" style={contentHeaderStyle}>{this.props.header}</h3>
+              <div>
+                <h3 className="image-text__header u-bold" style={contentHeaderStyle}>{this.props.header}</h3>
               </div>
               <div
-                className={`image-text__content uk-text-${this.props.alignContent}`}
+                className={`image-text__content`}
                 dangerouslySetInnerHTML={createMarkup(this.props.content)}
               />
             </div>
