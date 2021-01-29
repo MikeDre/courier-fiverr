@@ -14,7 +14,7 @@ const header = () => (
               buttonColor="#ffffff"
               buttonTextColor="#000000"
               buttonText="Back to main site"
-              buttonLink="https://couriermedia.co/"
+              link="https://couriermedia.co/"
             />
           </div>
         </div>
